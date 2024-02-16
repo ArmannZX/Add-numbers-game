@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+}
+
+.MainBody {
+    margin: auto;
+    width: 1400px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.MainBody .Circles {
+
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.MainBody .Circles .Plus {
+    font-size: 55px;
+    font-weight: bolder;
+    color: green;
+}
+
+.MainBody .Circles .Cir1, .Cir2 {
+    border-radius: 50%;
+    border: 3px solid gray;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    user-select: none
+}
+
+.MainBody .Circles .Cir1 p, .Cir2 p {
+    color: black;
+    font-size: 55px;
+}
+
+.MainBody .BottomSide {
+
+    width: 500px;
+    height: 200px;
+}
+
+.MainBody .BottomSide .AnswerSide {
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.MainBody .BottomSide .AnswerSide h1 {
+    font-size: 20px;
+    font-family: arial;
+    user-select: none
+}
+
+.MainBody .BottomSide .AnswerSide .Btn {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainBody .BottomSide .AnswerSide .Btn #input {
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    outline: none;
+    background-color: whitesmoke;
+}
+.div1 {
+    display: flex;
+    flex-flow: row nowrap;
+   gap: 50px;
+}
+.MainBody .BottomSide .AnswerSide .Btn #BTN, #Start {
+    cursor: pointer;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    height: 28px;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+#Start:hover {
+
+    background-color: darkgreen !important;
+    color: whitesmoke;
+
+}
+
+#BTN:hover {
+
+    background-color: darkgreen !important;
+    color: whitesmoke;
+
+}
+
+#Start:active {
+    transition: none !important;
+    opacity: 0.3;
+}
+
+#BTN:active {
+    transition: none !important;
+    opacity: 0.3;
+}
+
+.MainBody .BottomSide .Cor-InCor {
+    border-bottom: 2px solid gray;
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Bahnschrift;
+}
+
+.MainBody .BottomSide .Cor-InCor .Corrects {
+    font-size: 35px;
+    color: #058f05;
+    user-select: none;
+}
+
+.MainBody .BottomSide .Cor-InCor .InCorrects {
+    font-size: 35px;
+    color: darkred;
+    user-select: none
+}
+
+.MainBody .Timer {
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.MainBody .Timer p {
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    background-color: darkgray;
+    font-weight: bold;
+    font-family: Ebrima;
+    transition: all 1s;
+}
