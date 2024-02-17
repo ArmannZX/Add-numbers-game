@@ -94,12 +94,14 @@ body {
     outline: none;
     background-color: whitesmoke;
 }
+
 .div1 {
     display: flex;
     flex-flow: row nowrap;
-   gap: 50px;
+    gap: 50px;
 }
-.MainBody .BottomSide .AnswerSide .Btn #BTN, #Start {
+
+.MainBody .BottomSide .AnswerSide .Btn #BTN, #Start, #Stop {
     cursor: pointer;
     width: 70px;
     border-radius: 5px;
@@ -108,7 +110,7 @@ body {
     background-color: lightgray;
     font-weight: bold;
     font-size: 15px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 #Start:hover {
@@ -123,6 +125,16 @@ body {
     background-color: darkgreen !important;
     color: whitesmoke;
 
+}
+
+#Stop:hover {
+    background-color: darkgreen !important;
+    color: whitesmoke;
+}
+
+#Stop:active {
+    transition: none !important;
+    opacity: 0.3;
 }
 
 #Start:active {
@@ -175,5 +187,5 @@ body {
     background-color: darkgray;
     font-weight: bold;
     font-family: Ebrima;
-    transition: all 1s;
+    transition: all 0.8s;
 }
